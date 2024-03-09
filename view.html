@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Viewer</title>
+    <link rel="stylesheet" href="view.css">
+    <style>
+        #next-page-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #next-page-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 600px) {
+            #next-page-btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-viewer">
+        <div class="image-container">
+            <img src="match/Image3.JPG" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03945.JPG" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03929.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03898.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03763.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03750.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC03615.JPG" alt="Image 3">
+       
+        <!-- Add more image containers as needed -->
+    </div>
+    <div class="image-container">
+        <img src="match/DSC03585.JPG" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="match/DSC03590.JPG" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="match/DSC03598.JPG" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="wolf.jpeg" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="DSC04952.JPG" alt="Image 3">
+    </div>
+   
+</div>
+<button id="next-page-btn">Next Page</button>
+<script src="script.js"></script>
+   
+</body>
+</html>

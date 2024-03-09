@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        /* Add your custom CSS styles here */
+        .image-viewer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #previous-page-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #previous-page-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 600px) {
+            #previous-page-btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-viewer">
+        <div class="image-container">
+            <img src="match/lulu.JPG" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="match/DSC04598.JPG" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="DSC03727.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="DSC04604.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="DSC04666.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="DSC02998.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="match/Image2.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="/DSC04960.JPG" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="DSC04952.JPG" alt="Image 3">
+        </div>
+        <!-- Add more image containers as needed -->
+    </div>
+        <!-- Add more image containers as needed -->
+    </div>
+    <button id="previous-page-btn">Previous Page</button>
+
+    <script>
+        // Get the previous page button
+        const previousPageBtn = document.getElementById('previous-page-btn');
+
+        // Add event listener to navigate to the previous page
+        previousPageBtn.addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
